@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <h1>Atiq Ishraq Arnob</h1>
+    <div class="tab">
+      <button class="tablinks active" onclick="openCity(event, 'About')">About</button>
+      <button class="tablinks" onclick="openCity(event, 'CV')">CV</button>
+    </div>
+
+    <div id="About" class="tabcontent" style="display: block">
+      <h3>Hi!</h3>
+      <p>
+      This is Arnob. I am a Sr. Software Engineer at <a href="https://www.cefalo.com/en/" target="_blank">Cefalo</a>.
+      I have got 6+ years experience in the industry. I consider myself an adaptive learner.
+      <br/>
+      Currently, I am working as a consultant on a medical imaging project for <a href="https://www.nordicmediva.com/" target="_blank">NordicImagingLab on a product called nordicMEDiVA</a>.<br/>
+      I usually work on the backend. That can include rendering, daemons, applications, webservers etc. etc.  <br/>
+      I write a quite a bit of C++ for my work and consider myself familiar with all the bells and whistles that comes with it. <br/>
+      Other than that I also write a bunch of golang for websockets and servers and usually whip up various shell scripts for different reasons.<br/>
+      I am pretty familiar with docker containers and have spent a lot of time either writing or using them.<br/>
+      Previously, I wrote a lot of C#, some amount of Java.<br/>
+      I am quite familiar with Unix/Unix-Like OSes aka Linux and macOS.
+      I really like interacting with terminals and usually spend majority of my time there. I also prefer unix tools for interfacing with OS.<br/>
+      Last but not the least, I have worked a bit on vue.js and react.js as well.
+      </p>
+      <h4>Find me on: <a href="https://github.com/or-nob" target="_blank">github</a> / <a href="https://www.linkedin.com/in/atiq-ishraq-arnob/" target="_blank">linkedin</a></h4>
+    </div>
+
+    <div id="CV" class="tabcontent">
+        <br/>
+      <a href="/Users/arnob/Desktop/Resume/atiq_ishraq_arnob_resume_latest_apr2_25.pdf" download="newfilename">Download CV</a>
+    </div>
+
+<script>
+    function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+</script>
+
+<style>
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  /*border: 1px solid #ccc;
+  background-color: #f1f1f1;*/
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /* border: 1px solid #ccc;*/
+  border: none;
+  border-top: none;
+}
+</style>
+</html>
